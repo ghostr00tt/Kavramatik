@@ -7,10 +7,12 @@
     <ProjectGuid>{11F12A37-0997-445A-AB65-4DB2F4D3B901}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>sampleframe.cs</RootNamespace>
-    <AssemblyName>sampleframe.cs</AssemblyName>
+    <RootNamespace>Kavramatik.cs</RootNamespace>
+    <AssemblyName>Kavramatik.cs</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -23,10 +25,8 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -47,16 +47,35 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kavramatik.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.52, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\Bunifu_UI_v1.52.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,23 +86,181 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\logBLL.cs" />
-    <Compile Include="BLL\userBLL.cs" />
+    <Compile Include="ApiTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApiTest.Designer.cs">
+      <DependentUpon>ApiTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChoosingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChoosingScreen.Designer.cs">
+      <DependentUpon>ChoosingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\AllChars.cs" />
     <Compile Include="Classes\Chars.cs" />
+    <Compile Include="Colors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colors.Designer.cs">
+      <DependentUpon>Colors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColorsMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorsMulti.Designer.cs">
+      <DependentUpon>ColorsMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptLearning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptLearning.Designer.cs">
+      <DependentUpon>ConceptLearning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptLearningDimensions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptLearningDimensions.Designer.cs">
+      <DependentUpon>ConceptLearningDimensions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptLearningDirections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptLearningDirections.Designer.cs">
+      <DependentUpon>ConceptLearningDirections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptLearningEmotions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptLearningEmotions.Designer.cs">
+      <DependentUpon>ConceptLearningEmotions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptLearningNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptLearningNumbers.Designer.cs">
+      <DependentUpon>ConceptLearningNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptLearningQuantities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptLearningQuantities.Designer.cs">
+      <DependentUpon>ConceptLearningQuantities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptLearningShapes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptLearningShapes.Designer.cs">
+      <DependentUpon>ConceptLearningShapes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptTraining.Designer.cs">
+      <DependentUpon>ConceptTraining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptTrainingDimensions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptTrainingDimensions.Designer.cs">
+      <DependentUpon>ConceptTrainingDimensions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptTrainingDirections.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptTrainingDirections.Designer.cs">
+      <DependentUpon>ConceptTrainingDirections.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptTrainingEmotions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptTrainingEmotions.Designer.cs">
+      <DependentUpon>ConceptTrainingEmotions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptTrainingNumbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptTrainingNumbers.Designer.cs">
+      <DependentUpon>ConceptTrainingNumbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConceptTrainingShapes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptTrainingShapes.Designer.cs">
+      <DependentUpon>ConceptTrainingShapes.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseCheck.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DatabaseCheck.Designer.cs">
       <DependentUpon>DatabaseCheck.cs</DependentUpon>
     </Compile>
-    <Compile Include="DLL\DLLLog1.cs" />
-    <Compile Include="DLL\userDAL.cs" />
+    <Compile Include="Dimensions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dimensions.Designer.cs">
+      <DependentUpon>Dimensions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DimensionsMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DimensionsMulti.Designer.cs">
+      <DependentUpon>DimensionsMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectionsSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectionsSingle.Designer.cs">
+      <DependentUpon>DirectionsSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emotions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emotions.Designer.cs">
+      <DependentUpon>Emotions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameColorMatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameColorMatch.Designer.cs">
+      <DependentUpon>GameColorMatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Games.Designer.cs">
+      <DependentUpon>Games.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Numbers2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numbers2.Designer.cs">
+      <DependentUpon>Numbers2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Directions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Directions.Designer.cs">
+      <DependentUpon>Directions.cs</DependentUpon>
+    </Compile>
     <Compile Include="firstForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="firstForm.Designer.cs">
       <DependentUpon>firstForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Education.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Education.Designer.cs">
+      <DependentUpon>Education.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="GameAlphabet.cs">
       <SubType>Form</SubType>
@@ -103,30 +280,109 @@
     <Compile Include="GameTrueFalse.Designer.cs">
       <DependentUpon>GameTrueFalse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginAlternative.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginAlternative.Designer.cs">
       <DependentUpon>LoginAlternative.cs</DependentUpon>
     </Compile>
-    <Compile Include="MessageBoxes.cs">
+    <Compile Include="LoginClass.cs" />
+    <Compile Include="Classes\Numbers.cs" />
+    <Compile Include="MessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MessageBoxes.Designer.cs">
-      <DependentUpon>MessageBoxes.cs</DependentUpon>
+    <Compile Include="MessageBox.Designer.cs">
+      <DependentUpon>MessageBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Numbers.cs" />
+    <Compile Include="NumbersSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumbersSingle.Designer.cs">
+      <DependentUpon>NumbersSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opposite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Opposite.Designer.cs">
+      <DependentUpon>Opposite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OppositeMulti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OppositeMulti.Designer.cs">
+      <DependentUpon>OppositeMulti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Opposities.cs" />
+    <Compile Include="ConceptTrainingQuantities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConceptTrainingQuantities.Designer.cs">
+      <DependentUpon>ConceptTrainingQuantities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Quantities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quantities.Designer.cs">
+      <DependentUpon>Quantities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resource1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Numbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numbers.Designer.cs">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Senses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Senses.Designer.cs">
+      <DependentUpon>Senses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shapes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shapes.Designer.cs">
+      <DependentUpon>Shapes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShapesSingle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShapesSingle.Designer.cs">
+      <DependentUpon>ShapesSingle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.Designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
     <Compile Include="tutorScreen.cs">
       <SubType>Form</SubType>
@@ -134,11 +390,96 @@
     <Compile Include="tutorScreen.Designer.cs">
       <DependentUpon>tutorScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="Utils.cs" />
+    <EmbeddedResource Include="ApiTest.resx">
+      <DependentUpon>ApiTest.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChoosingScreen.resx">
+      <DependentUpon>ChoosingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Colors.resx">
+      <DependentUpon>Colors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorsMulti.resx">
+      <DependentUpon>ColorsMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptLearning.resx">
+      <DependentUpon>ConceptLearning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptLearningDimensions.resx">
+      <DependentUpon>ConceptLearningDimensions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptLearningDirections.resx">
+      <DependentUpon>ConceptLearningDirections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptLearningEmotions.resx">
+      <DependentUpon>ConceptLearningEmotions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptLearningNumbers.resx">
+      <DependentUpon>ConceptLearningNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptLearningQuantities.resx">
+      <DependentUpon>ConceptLearningQuantities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptLearningShapes.resx">
+      <DependentUpon>ConceptLearningShapes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptTraining.resx">
+      <DependentUpon>ConceptTraining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptTrainingDimensions.resx">
+      <DependentUpon>ConceptTrainingDimensions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptTrainingDirections.resx">
+      <DependentUpon>ConceptTrainingDirections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptTrainingEmotions.resx">
+      <DependentUpon>ConceptTrainingEmotions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptTrainingNumbers.resx">
+      <DependentUpon>ConceptTrainingNumbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptTrainingShapes.resx">
+      <DependentUpon>ConceptTrainingShapes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DatabaseCheck.resx">
       <DependentUpon>DatabaseCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Dimensions.resx">
+      <DependentUpon>Dimensions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DimensionsMulti.resx">
+      <DependentUpon>DimensionsMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectionsSingle.resx">
+      <DependentUpon>DirectionsSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emotions.resx">
+      <DependentUpon>Emotions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GameColorMatch.resx">
+      <DependentUpon>GameColorMatch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Games.resx">
+      <DependentUpon>Games.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numbers2.resx">
+      <DependentUpon>Numbers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directions.resx">
+      <DependentUpon>Directions.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="firstForm.resx">
       <DependentUpon>firstForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Education.resx">
+      <DependentUpon>Education.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GameAlphabet.resx">
       <DependentUpon>GameAlphabet.cs</DependentUpon>
@@ -149,18 +490,51 @@
     <EmbeddedResource Include="GameTrueFalse.resx">
       <DependentUpon>GameTrueFalse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="LoginAlternative.resx">
       <DependentUpon>LoginAlternative.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MessageBoxes.resx">
-      <DependentUpon>MessageBoxes.cs</DependentUpon>
+    <EmbeddedResource Include="MessageBox.resx">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numbers.resx">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumbersSingle.resx">
+      <DependentUpon>NumbersSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Opposite.resx">
+      <DependentUpon>Opposite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConceptTrainingQuantities.resx">
+      <DependentUpon>ConceptTrainingQuantities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quantities.resx">
+      <DependentUpon>Quantities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Senses.resx">
+      <DependentUpon>Senses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shapes.resx">
+      <DependentUpon>Shapes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShapesSingle.resx">
+      <DependentUpon>ShapesSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test.resx">
+      <DependentUpon>Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tutorScreen.resx">
       <DependentUpon>tutorScreen.cs</DependentUpon>
@@ -173,6 +547,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\DataSources\GameColorMatch.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Resources\images %288%29.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -192,10 +571,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\üsttasarım.png" />
     <None Include="Resources\%24this.BackgroundImage.png" />
+    <None Include="Resources\aaa123.jpg" />
+    <None Include="Resources\aa31.jpg" />
+    <Content Include="kavramatik.ico" />
+    <None Include="Resources\Alphabet\aaaaaaaaaaaaaaaaa.png" />
     <Content Include="Resources\Angry.wav" />
     <Content Include="Resources\Animal.wav" />
     <None Include="Resources\autism-clip-art-pictures-12.jpg" />
+    <None Include="Resources\backimage.ico" />
+    <None Include="Resources\backimagee.jpeg" />
     <Content Include="Resources\Big.wav" />
     <Content Include="Resources\Brother.wav" />
     <Content Include="Resources\Drink.wav" />
@@ -210,7 +596,9 @@
     <Content Include="Resources\i.wav" />
     <None Include="Resources\Image1.jpg" />
     <None Include="Resources\images.jpg" />
+    <None Include="Resources\Image1.bmp" />
     <Content Include="Resources\Indicator.wav" />
+    <None Include="Resources\Layer_0.png" />
     <Content Include="Resources\Leg.wav" />
     <None Include="Resources\lightbackgorund.jpg" />
     <None Include="Resources\lightbackgorund1.jpg" />
@@ -227,6 +615,8 @@
     <Content Include="Resources\Toilet.wav" />
     <Content Include="Resources\Want.wav" />
     <Content Include="Resources\Wash.wav" />
+    <None Include="Resources\web.jpg" />
+    <None Include="Resources\web1.jpg" />
     <Content Include="Resources\Woman.wav" />
     <Content Include="Resources\Yes.wav" />
     <Content Include="Resources\You.wav" />
@@ -248,9 +638,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <COMReference Include="SpeechLib">
       <Guid>{C866CA3A-32F7-11D2-9602-00C04F8EE628}</Guid>

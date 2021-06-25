@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using SpeechLib;
-namespace sampleframe.cs
+namespace Kavramatik.cs
 {
     public partial class DatabaseCheck : Form
     {

@@ -9,17 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Media;
 using System.Drawing;
-namespace sampleframe.cs
+namespace Kavramatik.cs
 {
     public partial class GameAlphabet : Form
     {
-        tutorScreen f1;
+        public string userMail;
+      
+        Education f5;
         GameDraw f3;
-        Login f2;
-        public GameAlphabet(tutorScreen f1)
+        LoginAlternative f2;
+        public GameAlphabet()
         {
             InitializeComponent();
-            this.f1 = f1;
+          
         }
 
        
@@ -40,20 +42,26 @@ namespace sampleframe.cs
                 i--;
                 this.TextChar.Text = chars.CharList[i].Character;
                 this.pictureBox1.Image = chars.CharList[i].image;
-                SoundPlayer s = chars.CharList[i].sound;
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                Aciklama.SetToolTip(pictureBox1, chars.CharList[i].Character);
                 if (audio.Checked == true)
 
-                    s.Play();
+                    webBrowser1.Document.GetElementById("tta_input_ta").InnerText = chars.CharList[i].Character;
+                webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+                
             }
             else if (workingNums && i > 0)
             {
                 i--;
                 this.TextChar.Text = chars.NumList[i].Character;
                 this.pictureBox1.Image = chars.NumList[i].image;
-                SoundPlayer s = chars.NumList[i].sound;
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                Aciklama.SetToolTip(pictureBox1, chars.NumList[i].Character);
                 if (audio.Checked == true)
 
-                    s.Play();
+                    webBrowser1.Document.GetElementById("tta_input_ta").InnerText = chars.NumList[i].Character;
+                webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+               
             }
         }
 
@@ -64,26 +72,48 @@ namespace sampleframe.cs
                 i++;
                 this.TextChar.Text = chars.CharList[i].Character;
                 this.pictureBox1.Image = chars.CharList[i].image;
-                SoundPlayer s = chars.CharList[i].sound;
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+                Aciklama.SetToolTip(pictureBox1, chars.CharList[i].Character);
+
                 if (audio.Checked == true)
 
-                    s.Play();
+                    webBrowser1.Document.GetElementById("tta_input_ta").InnerText = chars.CharList[i].Character;
+                webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+               
             }
             else if (workingNums && i < 9)
             {
                 i++;
                 this.TextChar.Text = chars.NumList[i].Character;
                 this.pictureBox1.Image = chars.NumList[i].image;
-                SoundPlayer s = chars.NumList[i].sound;
+                this.pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+               
                 if (audio.Checked == true)
 
-                    s.Play();
+                    webBrowser1.Document.GetElementById("tta_input_ta").InnerText = chars.NumList[i].Character;
+                webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
             }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            if (workingChar && i < 25)
+            {
+        
+                if (audio.Checked == true)
 
+                    webBrowser1.Document.GetElementById("tta_input_ta").InnerText = chars.CharList[i].Character;
+                webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+
+            }
+            else if (workingNums && i < 9)
+            {       
+
+                if (audio.Checked == true)
+
+                    webBrowser1.Document.GetElementById("tta_input_ta").InnerText = chars.NumList[i].Character;
+                webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+            }
         }
 
         private void TextChar_Click(object sender, EventArgs e)
@@ -104,17 +134,26 @@ namespace sampleframe.cs
             SoundPlayer s = chars.NumList[i].sound;
             if (audio.Checked == true)
 
-                s.Play();
+               
             this.panel1.Visible = true;
             workingChar = false;
-            workingBang = false;
-            workingShon = false;
+         
             workingNums = true;
         }
-
+        WebBrowser webBrowser1 = new WebBrowser();
+        ToolTip Aciklama = new ToolTip();
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            try
+            {
+                webBrowser1.Navigate("https://www.bing.com/translator/?from=tr&to=en");
+                webBrowser1.ScriptErrorsSuppressed = true;
+                //Google Translate yi WebBrowser ile Aç
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -131,24 +170,25 @@ namespace sampleframe.cs
             SoundPlayer s = chars.CharList[i].sound;
             if (audio.Checked == true)
 
-                s.Play();
+               
             this.panel1.Visible = true;
             workingChar = true;
-            workingBang = false;
-            workingShon = false;
+      
             workingNums = false;
         }
 
         private void blackboard_Click(object sender, EventArgs e)
         {
             this.Hide();
-            f3 = new GameDraw(f2,this);
+            f3 = new GameDraw();
             f3.Show();
         }
 
         private void logout_Click(object sender, EventArgs e)
         {
-            f1.Show();
+            Games games = new Games();
+            games.label2.Text = label1.Text;
+            games.Show();
             this.Hide();
         }
 

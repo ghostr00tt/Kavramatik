@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Media;
 using System.Drawing;
 
-namespace sampleframe.cs
+namespace Kavramatik.cs
 {
     public class Number
     {

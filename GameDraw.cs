@@ -8,29 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace sampleframe.cs
+namespace Kavramatik.cs
 {
     public partial class GameDraw : Form
     {
-        Login f1;
+        LoginAlternative f1;
         GameAlphabet f2;
         bool painting = false;
         Graphics g;
         GameTrueFalse f4;
 
-        public GameDraw(Login f1,GameAlphabet f2)
+        public GameDraw()
         {
             InitializeComponent();
-            this.f2 = f2;
-            this.f1 = f1;
+         
             g = panel1.CreateGraphics();
         }
 
 
         private void home_Click(object sender, EventArgs e)
         {
+            Games games = new Games();
+            games.label2.Text = this.label2.Text;
+            games.Show();
             this.Hide();
-            f2.Show();
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -104,7 +105,7 @@ namespace sampleframe.cs
 
         private void quiz_Click(object sender, EventArgs e)
         {
-            f4 = new GameTrueFalse(this);
+            f4 = new GameTrueFalse();
             this.Hide();
             f4.Show();
         }

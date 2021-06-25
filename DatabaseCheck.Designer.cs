@@ -1,4 +1,4 @@
-﻿namespace sampleframe.cs
+﻿namespace Kavramatik.cs
 {
     partial class DatabaseCheck
     {

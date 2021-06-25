@@ -7,7 +7,7 @@ using System.Media;
 using System.Drawing;
 
 
-namespace sampleframe.cs
+namespace Kavramatik.cs
 
 {
     class Chars
