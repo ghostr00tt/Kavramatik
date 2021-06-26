@@ -1,4 +1,6 @@
-# Kavramatik - Özel Gereksinimli Öğrenciler İçin Kavram Öğretimi
+# Kavramatik - Özel Gereksinimli Öğrenciler İçin Kavram Öğretimi 
+
+# (For English description read Readme.en-us.md)
 (Ekran Görüntüleri en aşağıda yer almaktadır.)
 
 Genel Yapı
