@@ -54,54 +54,7 @@ Proje kapsamında öğretilmesi hedeflenen kategoriler;
 
 -Zıt Kavramlar
 
-Olmak üzere 9 ayrı kategori şeklinde tasarlanmıştır.Kategori içeriklerine değinecek olursak ;
-
-Renkler
-
-Renkler kategorisinde kırmızı,mavi,sarı,turuncu,yeşil,mor,siyah,beyaz renkler bulunmaktadır.
-
-
-
-Boyutlar
-
-Boyutlar kategorisinde büyük-küçük,dar-geniş,ince-kalın,uzun-kısa boyutları bulunmaktadır.
-
-
-
-Şekiller
-
-Şekiller kategorisinde daire,kare,üçgen,dikdörtgen,elips şekilleri bulunmaktadır.
-
-
-
-Miktarlar
-
-Miktarlar kategorisinde az-çok,ağır-hafif,boş-dolu,bütün-çeyrek/yarım miktarları yer almaktadır
-
-
-
-Yönler
-
-Yönler kategorisinde önünde,arkasında,altında,içinde,üstünde,yanında yönleri bulunmaktadır.
-
-
-
-Sayılar
-
-Sayılar kategorisinde 0,1,2,3,4,5,6,7,8,9 rakamları yer almaktadır.
-
-
-
-Duyular
-
-Duyular kategorisinde tatlı,tuzlu,acı,ekşi,soğuk,sıcak duyuları yer almaktadır.
-
-
-
-Duygular
-
-Duygular kategorisinde mutlu,üzgün,kızgın,korkmuş,mutlu duyguları yer almaktadır.
-
+Olmak üzere 9 ayrı kategori şeklinde tasarlanmıştır.
 
 
 Sistemin Çalışma Yapısı
