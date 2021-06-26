@@ -95,6 +95,17 @@ namespace Kavramatik.cs
         }
         private async void Quantities_Load(object sender, EventArgs e)
         {
+
+            try
+            {
+                webBrowser1.Navigate("https://www.bing.com/translator/?from=tr&to=en");
+                webBrowser1.ScriptErrorsSuppressed = true;
+                //Google Translate yi WebBrowser ile Aç
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             var client = new HttpClient();
             client.BaseAddress = new Uri(Utils.BASE_URL);
             HttpResponseMessage responseMessage = await client.GetAsync("quantities?token_id=464685648465A468464qw8A544688648W6REEWT6V");
@@ -196,7 +207,14 @@ namespace Kavramatik.cs
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-
+            webBrowser1.Document.GetElementById("tta_input_ta").InnerText = quantities[0].quantitiy_name;
+            webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+            Aciklama.SetToolTip(pictureBox1, quantities[0].quantitiy_name);
+            ConceptTrainingQuantities conceptLearning = new ConceptTrainingQuantities();
+            conceptLearning.quantities = this.quantities;
+            conceptLearning.index = 11;
+            conceptLearning.Show();
+            this.Hide();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -206,12 +224,26 @@ namespace Kavramatik.cs
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-
+            webBrowser1.Document.GetElementById("tta_input_ta").InnerText = quantities[0].quantitiy_name;
+            webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+            Aciklama.SetToolTip(pictureBox1, quantities[0].quantitiy_name);
+            ConceptTrainingQuantities conceptLearning = new ConceptTrainingQuantities();
+            conceptLearning.quantities = this.quantities;
+            conceptLearning.index = 8;
+            conceptLearning.Show();
+            this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            webBrowser1.Document.GetElementById("tta_input_ta").InnerText = quantities[0].quantitiy_name;
+            webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+            Aciklama.SetToolTip(pictureBox1, quantities[0].quantitiy_name);
+            ConceptTrainingQuantities conceptLearning = new ConceptTrainingQuantities();
+            conceptLearning.quantities = this.quantities;
+            conceptLearning.index = 4;
+            conceptLearning.Show();
+            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -223,10 +255,19 @@ namespace Kavramatik.cs
         {
 
         }
-
+        WebBrowser webBrowser1 = new WebBrowser();
+        ToolTip Aciklama = new ToolTip();
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+            webBrowser1.Document.GetElementById("tta_input_ta").InnerText = quantities[0].quantitiy_name;
+            webBrowser1.Document.GetElementById("tta_playiconsrc").InvokeMember("click");
+            Aciklama.SetToolTip(pictureBox1, quantities[0].quantitiy_name);
+            ConceptTrainingQuantities conceptLearning = new ConceptTrainingQuantities();
+            conceptLearning.quantities = this.quantities;
+            conceptLearning.index = 0;
+            conceptLearning.Show();
+            this.Hide();
         }
     }
 }

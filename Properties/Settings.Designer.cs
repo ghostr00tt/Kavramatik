@@ -106,5 +106,17 @@ namespace Kavramatik.cs.Properties {
                 this["dimensions"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string quantities {
+            get {
+                return ((string)(this["quantities"]));
+            }
+            set {
+                this["quantities"] = value;
+            }
+        }
     }
 }

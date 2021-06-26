@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using System.Media;
 using System.Configuration;
 using System.Data.SqlClient;
-
 using MySql.Data.MySqlClient;
 using System.IO;
 using System.Net.Http;
@@ -560,6 +559,11 @@ namespace Kavramatik.cs
             Profile profile = new Profile();
             profile.userData = lblUsername.Text.ToString();
             profile.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -86,243 +86,237 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiTest.cs">
+    <Compile Include="Views\ChoosingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApiTest.Designer.cs">
-      <DependentUpon>ApiTest.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ChoosingScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ChoosingScreen.Designer.cs">
+    <Compile Include="Views\ChoosingScreen.Designer.cs">
       <DependentUpon>ChoosingScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\AllChars.cs" />
     <Compile Include="Classes\Chars.cs" />
-    <Compile Include="Colors.cs">
+    <Compile Include="Views\Colors.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Colors.Designer.cs">
+    <Compile Include="Views\Colors.Designer.cs">
       <DependentUpon>Colors.cs</DependentUpon>
     </Compile>
-    <Compile Include="ColorsMulti.cs">
+    <Compile Include="Views\ColorsMulti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ColorsMulti.Designer.cs">
+    <Compile Include="Views\ColorsMulti.Designer.cs">
       <DependentUpon>ColorsMulti.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptLearning.cs">
+    <Compile Include="Views\ConceptLearning.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptLearning.Designer.cs">
+    <Compile Include="Views\ConceptLearning.Designer.cs">
       <DependentUpon>ConceptLearning.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptLearningDimensions.cs">
+    <Compile Include="Views\ConceptLearningDimensions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptLearningDimensions.Designer.cs">
+    <Compile Include="Views\ConceptLearningDimensions.Designer.cs">
       <DependentUpon>ConceptLearningDimensions.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptLearningDirections.cs">
+    <Compile Include="Views\ConceptLearningDirections.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptLearningDirections.Designer.cs">
+    <Compile Include="Views\ConceptLearningDirections.Designer.cs">
       <DependentUpon>ConceptLearningDirections.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptLearningEmotions.cs">
+    <Compile Include="Views\ConceptLearningEmotions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptLearningEmotions.Designer.cs">
+    <Compile Include="Views\ConceptLearningEmotions.Designer.cs">
       <DependentUpon>ConceptLearningEmotions.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptLearningNumbers.cs">
+    <Compile Include="Views\ConceptLearningNumbers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptLearningNumbers.Designer.cs">
+    <Compile Include="Views\ConceptLearningNumbers.Designer.cs">
       <DependentUpon>ConceptLearningNumbers.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptLearningQuantities.cs">
+    <Compile Include="Views\ConceptLearningQuantities.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptLearningQuantities.Designer.cs">
+    <Compile Include="Views\ConceptLearningQuantities.Designer.cs">
       <DependentUpon>ConceptLearningQuantities.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptLearningShapes.cs">
+    <Compile Include="Views\ConceptLearningShapes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptLearningShapes.Designer.cs">
+    <Compile Include="Views\ConceptLearningShapes.Designer.cs">
       <DependentUpon>ConceptLearningShapes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptTraining.cs">
+    <Compile Include="Views\ConceptTraining.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptTraining.Designer.cs">
+    <Compile Include="Views\ConceptTraining.Designer.cs">
       <DependentUpon>ConceptTraining.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptTrainingDimensions.cs">
+    <Compile Include="Views\ConceptTrainingDimensions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptTrainingDimensions.Designer.cs">
+    <Compile Include="Views\ConceptTrainingDimensions.Designer.cs">
       <DependentUpon>ConceptTrainingDimensions.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptTrainingDirections.cs">
+    <Compile Include="Views\ConceptTrainingDirections.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptTrainingDirections.Designer.cs">
+    <Compile Include="Views\ConceptTrainingDirections.Designer.cs">
       <DependentUpon>ConceptTrainingDirections.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptTrainingEmotions.cs">
+    <Compile Include="Views\ConceptTrainingEmotions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptTrainingEmotions.Designer.cs">
+    <Compile Include="Views\ConceptTrainingEmotions.Designer.cs">
       <DependentUpon>ConceptTrainingEmotions.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptTrainingNumbers.cs">
+    <Compile Include="Views\ConceptTrainingNumbers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptTrainingNumbers.Designer.cs">
+    <Compile Include="Views\ConceptTrainingNumbers.Designer.cs">
       <DependentUpon>ConceptTrainingNumbers.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConceptTrainingShapes.cs">
+    <Compile Include="Views\ConceptTrainingShapes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptTrainingShapes.Designer.cs">
+    <Compile Include="Views\ConceptTrainingShapes.Designer.cs">
       <DependentUpon>ConceptTrainingShapes.cs</DependentUpon>
     </Compile>
-    <Compile Include="DatabaseCheck.cs">
+    <Compile Include="Views\DatabaseCheck.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DatabaseCheck.Designer.cs">
+    <Compile Include="Views\DatabaseCheck.Designer.cs">
       <DependentUpon>DatabaseCheck.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dimensions.cs">
+    <Compile Include="Views\Dimensions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dimensions.Designer.cs">
+    <Compile Include="Views\Dimensions.Designer.cs">
       <DependentUpon>Dimensions.cs</DependentUpon>
     </Compile>
-    <Compile Include="DimensionsMulti.cs">
+    <Compile Include="Views\DimensionsMulti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DimensionsMulti.Designer.cs">
+    <Compile Include="Views\DimensionsMulti.Designer.cs">
       <DependentUpon>DimensionsMulti.cs</DependentUpon>
     </Compile>
-    <Compile Include="DirectionsSingle.cs">
+    <Compile Include="Views\DirectionsSingle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DirectionsSingle.Designer.cs">
+    <Compile Include="Views\DirectionsSingle.Designer.cs">
       <DependentUpon>DirectionsSingle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Emotions.cs">
+    <Compile Include="Views\Emotions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Emotions.Designer.cs">
+    <Compile Include="Views\Emotions.Designer.cs">
       <DependentUpon>Emotions.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameColorMatch.cs">
+    <Compile Include="Views\GameColorMatch.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameColorMatch.Designer.cs">
+    <Compile Include="Views\GameColorMatch.Designer.cs">
       <DependentUpon>GameColorMatch.cs</DependentUpon>
     </Compile>
-    <Compile Include="Games.cs">
+    <Compile Include="Views\Games.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Games.Designer.cs">
+    <Compile Include="Views\Games.Designer.cs">
       <DependentUpon>Games.cs</DependentUpon>
     </Compile>
-    <Compile Include="Numbers2.cs">
+    <Compile Include="Views\Numbers2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Numbers2.Designer.cs">
+    <Compile Include="Views\Numbers2.Designer.cs">
       <DependentUpon>Numbers2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Directions.cs">
+    <Compile Include="Views\Directions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Directions.Designer.cs">
+    <Compile Include="Views\Directions.Designer.cs">
       <DependentUpon>Directions.cs</DependentUpon>
     </Compile>
-    <Compile Include="firstForm.cs">
+    <Compile Include="Views\firstForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="firstForm.Designer.cs">
+    <Compile Include="Views\firstForm.Designer.cs">
       <DependentUpon>firstForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Education.cs">
+    <Compile Include="Views\Education.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Education.Designer.cs">
+    <Compile Include="Views\Education.Designer.cs">
       <DependentUpon>Education.cs</DependentUpon>
     </Compile>
-    <Compile Include="ForgotPassword.cs">
+    <Compile Include="Views\ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ForgotPassword.Designer.cs">
+    <Compile Include="Views\ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameAlphabet.cs">
+    <Compile Include="Views\GameAlphabet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameAlphabet.Designer.cs">
+    <Compile Include="Views\GameAlphabet.Designer.cs">
       <DependentUpon>GameAlphabet.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameDraw.cs">
+    <Compile Include="Views\GameDraw.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameDraw.Designer.cs">
+    <Compile Include="Views\GameDraw.Designer.cs">
       <DependentUpon>GameDraw.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameTrueFalse.cs">
+    <Compile Include="Views\GameTrueFalse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameTrueFalse.Designer.cs">
+    <Compile Include="Views\GameTrueFalse.Designer.cs">
       <DependentUpon>GameTrueFalse.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginAlternative.cs">
+    <Compile Include="Views\LoginAlternative.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginAlternative.Designer.cs">
+    <Compile Include="Views\LoginAlternative.Designer.cs">
       <DependentUpon>LoginAlternative.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginClass.cs" />
+    <Compile Include="Classes\LoginClass.cs" />
     <Compile Include="Classes\Numbers.cs" />
-    <Compile Include="MessageBox.cs">
+    <Compile Include="Views\MessageBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MessageBox.Designer.cs">
+    <Compile Include="Views\MessageBox.Designer.cs">
       <DependentUpon>MessageBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="NumbersSingle.cs">
+    <Compile Include="Views\NumbersSingle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NumbersSingle.Designer.cs">
+    <Compile Include="Views\NumbersSingle.Designer.cs">
       <DependentUpon>NumbersSingle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Opposite.cs">
+    <Compile Include="Views\Opposite.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Opposite.Designer.cs">
+    <Compile Include="Views\Opposite.Designer.cs">
       <DependentUpon>Opposite.cs</DependentUpon>
     </Compile>
-    <Compile Include="OppositeMulti.cs">
+    <Compile Include="Views\OppositeMulti.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OppositeMulti.Designer.cs">
+    <Compile Include="Views\OppositeMulti.Designer.cs">
       <DependentUpon>OppositeMulti.cs</DependentUpon>
     </Compile>
-    <Compile Include="Opposities.cs" />
-    <Compile Include="ConceptTrainingQuantities.cs">
+    <Compile Include="Classes\Opposities.cs" />
+    <Compile Include="Views\ConceptTrainingQuantities.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConceptTrainingQuantities.Designer.cs">
+    <Compile Include="Views\ConceptTrainingQuantities.Designer.cs">
       <DependentUpon>ConceptTrainingQuantities.cs</DependentUpon>
     </Compile>
-    <Compile Include="Profile.cs">
+    <Compile Include="Views\Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Profile.Designer.cs">
+    <Compile Include="Views\Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -331,16 +325,16 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Quantities.cs">
+    <Compile Include="Views\Quantities.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Quantities.Designer.cs">
+    <Compile Include="Views\Quantities.Designer.cs">
       <DependentUpon>Quantities.cs</DependentUpon>
     </Compile>
-    <Compile Include="Register.cs">
+    <Compile Include="Views\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Register.Designer.cs">
+    <Compile Include="Views\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Resource1.Designer.cs">
@@ -348,196 +342,174 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
-    <Compile Include="Numbers.cs">
+    <Compile Include="Views\Numbers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Numbers.Designer.cs">
+    <Compile Include="Views\Numbers.Designer.cs">
       <DependentUpon>Numbers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Senses.cs">
+    <Compile Include="Views\Senses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Senses.Designer.cs">
+    <Compile Include="Views\Senses.Designer.cs">
       <DependentUpon>Senses.cs</DependentUpon>
     </Compile>
-    <Compile Include="Settings.cs">
+    <Compile Include="Views\Settings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Settings.Designer.cs">
+    <Compile Include="Views\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shapes.cs">
+    <Compile Include="Views\Shapes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Shapes.Designer.cs">
+    <Compile Include="Views\Shapes.Designer.cs">
       <DependentUpon>Shapes.cs</DependentUpon>
     </Compile>
-    <Compile Include="ShapesSingle.cs">
+    <Compile Include="Views\ShapesSingle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ShapesSingle.Designer.cs">
+    <Compile Include="Views\ShapesSingle.Designer.cs">
       <DependentUpon>ShapesSingle.cs</DependentUpon>
     </Compile>
-    <Compile Include="Test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="tutorScreen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="tutorScreen.Designer.cs">
-      <DependentUpon>tutorScreen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs" />
-    <Compile Include="Utils.cs" />
-    <EmbeddedResource Include="ApiTest.resx">
-      <DependentUpon>ApiTest.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ChoosingScreen.resx">
+    <Compile Include="Classes\User.cs" />
+    <Compile Include="Classes\Utils.cs" />
+    <EmbeddedResource Include="Views\ChoosingScreen.resx">
       <DependentUpon>ChoosingScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Colors.resx">
+    <EmbeddedResource Include="Views\Colors.resx">
       <DependentUpon>Colors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ColorsMulti.resx">
+    <EmbeddedResource Include="Views\ColorsMulti.resx">
       <DependentUpon>ColorsMulti.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptLearning.resx">
+    <EmbeddedResource Include="Views\ConceptLearning.resx">
       <DependentUpon>ConceptLearning.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptLearningDimensions.resx">
+    <EmbeddedResource Include="Views\ConceptLearningDimensions.resx">
       <DependentUpon>ConceptLearningDimensions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptLearningDirections.resx">
+    <EmbeddedResource Include="Views\ConceptLearningDirections.resx">
       <DependentUpon>ConceptLearningDirections.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptLearningEmotions.resx">
+    <EmbeddedResource Include="Views\ConceptLearningEmotions.resx">
       <DependentUpon>ConceptLearningEmotions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptLearningNumbers.resx">
+    <EmbeddedResource Include="Views\ConceptLearningNumbers.resx">
       <DependentUpon>ConceptLearningNumbers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptLearningQuantities.resx">
+    <EmbeddedResource Include="Views\ConceptLearningQuantities.resx">
       <DependentUpon>ConceptLearningQuantities.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptLearningShapes.resx">
+    <EmbeddedResource Include="Views\ConceptLearningShapes.resx">
       <DependentUpon>ConceptLearningShapes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptTraining.resx">
+    <EmbeddedResource Include="Views\ConceptTraining.resx">
       <DependentUpon>ConceptTraining.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptTrainingDimensions.resx">
+    <EmbeddedResource Include="Views\ConceptTrainingDimensions.resx">
       <DependentUpon>ConceptTrainingDimensions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptTrainingDirections.resx">
+    <EmbeddedResource Include="Views\ConceptTrainingDirections.resx">
       <DependentUpon>ConceptTrainingDirections.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptTrainingEmotions.resx">
+    <EmbeddedResource Include="Views\ConceptTrainingEmotions.resx">
       <DependentUpon>ConceptTrainingEmotions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptTrainingNumbers.resx">
+    <EmbeddedResource Include="Views\ConceptTrainingNumbers.resx">
       <DependentUpon>ConceptTrainingNumbers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptTrainingShapes.resx">
+    <EmbeddedResource Include="Views\ConceptTrainingShapes.resx">
       <DependentUpon>ConceptTrainingShapes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DatabaseCheck.resx">
+    <EmbeddedResource Include="Views\DatabaseCheck.resx">
       <DependentUpon>DatabaseCheck.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dimensions.resx">
+    <EmbeddedResource Include="Views\Dimensions.resx">
       <DependentUpon>Dimensions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DimensionsMulti.resx">
+    <EmbeddedResource Include="Views\DimensionsMulti.resx">
       <DependentUpon>DimensionsMulti.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DirectionsSingle.resx">
+    <EmbeddedResource Include="Views\DirectionsSingle.resx">
       <DependentUpon>DirectionsSingle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Emotions.resx">
+    <EmbeddedResource Include="Views\Emotions.resx">
       <DependentUpon>Emotions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameColorMatch.resx">
+    <EmbeddedResource Include="Views\GameColorMatch.resx">
       <DependentUpon>GameColorMatch.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Games.resx">
+    <EmbeddedResource Include="Views\Games.resx">
       <DependentUpon>Games.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Numbers2.resx">
+    <EmbeddedResource Include="Views\Numbers2.resx">
       <DependentUpon>Numbers2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Directions.resx">
+    <EmbeddedResource Include="Views\Directions.resx">
       <DependentUpon>Directions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="firstForm.resx">
+    <EmbeddedResource Include="Views\firstForm.resx">
       <DependentUpon>firstForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Education.resx">
+    <EmbeddedResource Include="Views\Education.resx">
       <DependentUpon>Education.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ForgotPassword.resx">
+    <EmbeddedResource Include="Views\ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameAlphabet.resx">
+    <EmbeddedResource Include="Views\GameAlphabet.resx">
       <DependentUpon>GameAlphabet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameDraw.resx">
+    <EmbeddedResource Include="Views\GameDraw.resx">
       <DependentUpon>GameDraw.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameTrueFalse.resx">
+    <EmbeddedResource Include="Views\GameTrueFalse.resx">
       <DependentUpon>GameTrueFalse.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginAlternative.resx">
+    <EmbeddedResource Include="Views\LoginAlternative.resx">
       <DependentUpon>LoginAlternative.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MessageBox.resx">
+    <EmbeddedResource Include="Views\MessageBox.resx">
       <DependentUpon>MessageBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Numbers.resx">
+    <EmbeddedResource Include="Views\Numbers.resx">
       <DependentUpon>Numbers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NumbersSingle.resx">
+    <EmbeddedResource Include="Views\NumbersSingle.resx">
       <DependentUpon>NumbersSingle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Opposite.resx">
+    <EmbeddedResource Include="Views\Opposite.resx">
       <DependentUpon>Opposite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConceptTrainingQuantities.resx">
+    <EmbeddedResource Include="Views\ConceptTrainingQuantities.resx">
       <DependentUpon>ConceptTrainingQuantities.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Profile.resx">
+    <EmbeddedResource Include="Views\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Quantities.resx">
+    <EmbeddedResource Include="Views\Quantities.resx">
       <DependentUpon>Quantities.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Register.resx">
+    <EmbeddedResource Include="Views\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Resource1.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Senses.resx">
+    <EmbeddedResource Include="Views\Senses.resx">
       <DependentUpon>Senses.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings.resx">
+    <EmbeddedResource Include="Views\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Shapes.resx">
+    <EmbeddedResource Include="Views\Shapes.resx">
       <DependentUpon>Shapes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ShapesSingle.resx">
+    <EmbeddedResource Include="Views\ShapesSingle.resx">
       <DependentUpon>ShapesSingle.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Test.resx">
-      <DependentUpon>Test.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="tutorScreen.resx">
-      <DependentUpon>tutorScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
   </ItemGroup>
@@ -564,13 +536,6 @@
     <None Include="Resources\download %282%29.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\üsttasarım.png" />
     <None Include="Resources\%24this.BackgroundImage.png" />
     <None Include="Resources\aaa123.jpg" />

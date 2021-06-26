@@ -346,7 +346,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Quantities";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Miktarlar";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Quantities_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();

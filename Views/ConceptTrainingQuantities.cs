@@ -104,7 +104,7 @@ namespace Kavramatik.cs
             index++;
             randomizedIndex = index;
 
-
+            reverse = true;
             pictureBox2.Image = Utils.byteToImg(quantities[index].quantitiy_one_image);
             pictureBox1.Image = Utils.byteToImg(quantities[randomizedIndex].quantitiy_two_image);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
