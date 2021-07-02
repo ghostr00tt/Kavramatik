@@ -1,9 +1,9 @@
-# Kavramatik - Özel Gereksinimli Öğrenciler İçin Kavram Öğretimi 
+# Kavramatik - Özel Gereksinimli Öğrenciler İçin Kavram Öğretimi
 
 # (For English description read Readme.en-us.md)
 (Ekran Görüntüleri en aşağıda yer almaktadır.)
 
-
+# Kavramatik_Installer dosyası ile kurulumu gerçekleştirip, windows ortamında çalıştırabilirsiniz.
 Ekran Görüntüleri 
 ![giriş](https://user-images.githubusercontent.com/61949486/123527185-0df64e80-d6e6-11eb-8551-505745c59212.JPG)
 ______________________________________________________________________________________________________________________
