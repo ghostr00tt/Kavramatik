@@ -163,6 +163,16 @@ namespace Kavramatik.cs {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sponge {
+            get {
+                object obj = ResourceManager.GetObject("sponge", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap üsttasarım {
             get {
                 object obj = ResourceManager.GetObject("üsttasarım", resourceCulture);

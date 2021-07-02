@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OzelOgrenci.cs", "OzelOgrenci.cs.csproj", "{11F12A37-0997-445A-AB65-4DB2F4D3B901}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Kavramatik_Installer", "..\..\..\Desktop\KavramatikSetup\Kavramatik_Installer\Kavramatik_Installer.vdproj", "{95AC2CA0-3465-47F9-98B6-EAD6F8400626}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,8 +15,6 @@ Global
 		{11F12A37-0997-445A-AB65-4DB2F4D3B901}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11F12A37-0997-445A-AB65-4DB2F4D3B901}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11F12A37-0997-445A-AB65-4DB2F4D3B901}.Release|Any CPU.Build.0 = Release|Any CPU
-		{95AC2CA0-3465-47F9-98B6-EAD6F8400626}.Debug|Any CPU.ActiveCfg = Debug
-		{95AC2CA0-3465-47F9-98B6-EAD6F8400626}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

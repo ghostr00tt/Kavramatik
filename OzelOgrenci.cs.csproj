@@ -256,12 +256,6 @@
     <Compile Include="Views\ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\GameAlphabet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Views\GameAlphabet.Designer.cs">
-      <DependentUpon>GameAlphabet.cs</DependentUpon>
-    </Compile>
     <Compile Include="Views\GameDraw.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -459,9 +453,6 @@
     <EmbeddedResource Include="Views\ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\GameAlphabet.resx">
-      <DependentUpon>GameAlphabet.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Views\GameDraw.resx">
       <DependentUpon>GameDraw.cs</DependentUpon>
     </EmbeddedResource>
@@ -577,6 +568,7 @@
     <Content Include="Resources\Sister.wav" />
     <Content Include="Resources\Small.wav" />
     <None Include="Resources\sponge.jpeg" />
+    <None Include="Resources\sponge.jpg" />
     <Content Include="Resources\Toilet.wav" />
     <Content Include="Resources\Want.wav" />
     <Content Include="Resources\Wash.wav" />

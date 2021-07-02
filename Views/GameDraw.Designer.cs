@@ -119,9 +119,10 @@ namespace Kavramatik.cs
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(672, 335);
+            this.pictureBox1.Image = global::Kavramatik.cs.Resource1.sponge;
+            this.pictureBox1.Location = new System.Drawing.Point(668, 310);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(196, 176);
+            this.pictureBox1.Size = new System.Drawing.Size(196, 190);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;

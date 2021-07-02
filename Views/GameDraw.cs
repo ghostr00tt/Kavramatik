@@ -13,7 +13,7 @@ namespace Kavramatik.cs
     public partial class GameDraw : Form
     {
         LoginAlternative f1;
-        GameAlphabet f2;
+       
         bool painting = false;
         Graphics g;
         GameTrueFalse f4;

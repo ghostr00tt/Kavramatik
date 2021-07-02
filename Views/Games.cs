@@ -21,11 +21,8 @@ namespace Kavramatik.cs
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GameAlphabet f2 = new GameAlphabet();
-            f2.userMail = this.userMail;
-            f2.label1.Text = label2.Text;
-            f2.Show();
-            
+      
+        
         }
 
         private void Games_Load(object sender, EventArgs e)

@@ -205,19 +205,9 @@ namespace Kavramatik.cs
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            bool IsOpen = false;
-            foreach (Form f in Application.OpenForms)
-            {
-                if (f.Text == "Renkler")
-                {
-                    IsOpen = true;
-                    f.Focus();
-                    break;
-                }
-            }
-
-            if (IsOpen == false)
-            {
+            
+           
+               
                 if (display == "multiple")
                 {
                     ColorsMulti colors2 = new ColorsMulti();
@@ -245,24 +235,14 @@ namespace Kavramatik.cs
 
 
 
-        }
+        
        
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            bool IsOpen = false;
-            foreach (Form f in Application.OpenForms)
-            {
-                if (f.Text == "Boyutlar")
-                {
-                    IsOpen = true;
-                    f.Focus();
-                    break;
-                }
-            }
+          
 
-            if (IsOpen == false)
-            {
+            
                 if (display == "multiple")
                 {
                     DimensionsMulti dimensionsMulti = new DimensionsMulti();
@@ -274,7 +254,7 @@ namespace Kavramatik.cs
                         dimensions.Show();
                 }
 
-            }
+            
             // if(display == "multiple")
             // {
             //     DimensionsMulti dimensionsMulti = new DimensionsMulti();
@@ -290,19 +270,9 @@ namespace Kavramatik.cs
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            bool IsOpen = false;
-            foreach (Form f in Application.OpenForms)
-            {
-                if (f.Text == "Şekiller")
-                {
-                    IsOpen = true;
-                    f.Focus();
-                    break;
-                }
-            }
+        
 
-            if (IsOpen == false)
-            {
+            
                 if (display == "multiple")
                 {
                     Shapes shapes = new Shapes();
@@ -316,7 +286,7 @@ namespace Kavramatik.cs
 
             }
 
-        }
+        
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -430,19 +400,8 @@ namespace Kavramatik.cs
         private void pictureBox5_Click(object sender, EventArgs e)
         {
 
-            bool IsOpen = false;
-            foreach (Form f in Application.OpenForms)
-            {
-                if (f.Text == "Yönler")
-                {
-                    IsOpen = true;
-                    f.Focus();
-                    break;
-                }
-            }
+            
 
-            if (IsOpen == false)
-            {
                 if (display == "multiple")
                 {
                     Directions directions = new Directions();
@@ -454,7 +413,7 @@ namespace Kavramatik.cs
                     directionsSingle.Show();
                 }
 
-            }
+            
             //if (display == "multiple")
             //{
             //    Directions directions = new Directions();

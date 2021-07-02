@@ -31,7 +31,7 @@ namespace Kavramatik.cs
 
         async private void getProfileDetails()
         {
-            String mail = label2.Text.ToString();
+            String mail = Properties.Settings.Default.userMail;
 
             String showProfile = String.Format("http://kavramatik.com/api/showProfile?user_email=" + mail);
             var request = WebRequest.Create(showProfile);
@@ -78,8 +78,8 @@ namespace Kavramatik.cs
             label4.Visible = false;
             getProfileDetails();
             labelScore.Text =Parse(richTextBox1.Text.ToString());
-            pictureBox1.Image = Utils.byteToImg(numbers[12].number_one_image);
-            pictureBox2.Image = Utils.byteToImg(numbers[12].number_quantity_image);
+            pictureBox1.Image = Utils.byteToImg(numbers[1].number_one_image);
+            pictureBox2.Image = Utils.byteToImg(numbers[1].number_one_image);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             label1.Text = "Soru - ";
@@ -101,39 +101,39 @@ namespace Kavramatik.cs
         }
         private void Game1()
         {
-            pictureBox1.Image = Utils.byteToImg(numbers[11].number_one_image);
-            pictureBox2.Image = Utils.byteToImg(numbers[11].number_quantity_image);
+            pictureBox1.Image = Utils.byteToImg(numbers[1].number_one_image);
+            pictureBox2.Image = Utils.byteToImg(numbers[1].number_one_image);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void Game2()
         {
-            pictureBox1.Image = Utils.byteToImg(numbers[5].number_one_image);
-            pictureBox2.Image = Utils.byteToImg(numbers[6].number_quantity_image);
+            pictureBox1.Image = Utils.byteToImg(numbers[2].number_one_image);
+            pictureBox2.Image = Utils.byteToImg(numbers[3].number_one_image);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         private void Game3()
         {
             pictureBox1.Image = Utils.byteToImg(numbers[3].number_one_image);
-            pictureBox2.Image = Utils.byteToImg(numbers[4].number_quantity_image);
+            pictureBox2.Image = Utils.byteToImg(numbers[1].number_one_image);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void Game4()
         {
-            pictureBox1.Image = Utils.byteToImg(numbers[8].number_one_image);
-            pictureBox2.Image = Utils.byteToImg(numbers[8].number_quantity_image);
+            pictureBox1.Image = Utils.byteToImg(numbers[5].number_one_image);
+            pictureBox2.Image = Utils.byteToImg(numbers[5].number_one_image);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void Game5()
         {
-            pictureBox1.Image = Utils.byteToImg(numbers[1].number_one_image);
-            pictureBox2.Image = Utils.byteToImg(numbers[1].number_quantity_image);
+            pictureBox1.Image = Utils.byteToImg(numbers[8].number_one_image);
+            pictureBox2.Image = Utils.byteToImg(numbers[8].number_one_image);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
         }
